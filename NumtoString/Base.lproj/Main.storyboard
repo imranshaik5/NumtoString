@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,158 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumtoString" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cu-Ov-KoQ" customClass="view" customModule="NumtoString" customModuleProvider="target">
+                                <rect key="frame" x="20" y="52" width="280" height="376"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**Value should'nt exceed 16 digits." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHh-AK-rna" customClass="label" customModule="NumtoString" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="19" width="264" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvN-KX-M03">
+                                        <rect key="frame" x="8" y="202" width="264" height="134"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <color key="textColor" red="0.073797578114373333" green="0.23711135786802029" blue="0.028575260759967556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="As0-vY-chA" customClass="view" customModule="NumtoString" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="54.5" width="264" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJq-ug-is9">
+                                                <rect key="frame" x="8" y="8" width="66" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Value here (Max 16 digits)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BTr-NC-JOe">
+                                                <rect key="frame" x="5" y="20" width="254" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="w5u-ZI-61R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wJq-ug-is9" secondAttribute="trailing" constant="190" id="3fn-CS-tGi"/>
+                                            <constraint firstAttribute="bottom" secondItem="BTr-NC-JOe" secondAttribute="bottom" constant="8" id="3kX-1j-2BK"/>
+                                            <constraint firstItem="wJq-ug-is9" firstAttribute="top" secondItem="As0-vY-chA" secondAttribute="top" constant="8" id="6ST-rb-7WX"/>
+                                            <constraint firstItem="BTr-NC-JOe" firstAttribute="top" secondItem="wJq-ug-is9" secondAttribute="bottom" id="6Zk-Ms-1GB"/>
+                                            <constraint firstItem="BTr-NC-JOe" firstAttribute="leading" secondItem="As0-vY-chA" secondAttribute="leading" constant="5" id="dsW-cz-iwB"/>
+                                            <constraint firstItem="wJq-ug-is9" firstAttribute="leading" secondItem="As0-vY-chA" secondAttribute="leading" constant="8" id="hC0-7K-L0y"/>
+                                            <constraint firstAttribute="trailing" secondItem="BTr-NC-JOe" secondAttribute="trailing" constant="5" id="sPy-O5-Ph2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56K-ty-y4o" customClass="button" customModule="NumtoString" customModuleProvider="target">
+                                        <rect key="frame" x="85" y="130.5" width="111" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Enter">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1330822482" green="0.22158564110000001" blue="0.75987468270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onEnterBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOz-7s-Bfr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NvN-KX-M03" secondAttribute="trailing" constant="8" id="0bb-gK-fD2"/>
+                                    <constraint firstItem="As0-vY-chA" firstAttribute="top" secondItem="DHh-AK-rna" secondAttribute="bottom" constant="21" id="Aff-uq-UJu"/>
+                                    <constraint firstAttribute="bottom" secondItem="NvN-KX-M03" secondAttribute="bottom" constant="40" id="BUt-7t-zNm"/>
+                                    <constraint firstItem="NvN-KX-M03" firstAttribute="top" secondItem="As0-vY-chA" secondAttribute="bottom" constant="92.5" id="Bk0-k1-OTp"/>
+                                    <constraint firstAttribute="trailing" secondItem="DHh-AK-rna" secondAttribute="trailing" constant="8" id="CCY-gg-IGe"/>
+                                    <constraint firstItem="DHh-AK-rna" firstAttribute="top" secondItem="6cu-Ov-KoQ" secondAttribute="top" constant="19" id="QHz-Ed-cFH"/>
+                                    <constraint firstAttribute="trailing" secondItem="56K-ty-y4o" secondAttribute="trailing" constant="84" id="QTT-7z-rbs"/>
+                                    <constraint firstItem="NvN-KX-M03" firstAttribute="leading" secondItem="6cu-Ov-KoQ" secondAttribute="leading" constant="8" id="XHq-2T-chS"/>
+                                    <constraint firstItem="56K-ty-y4o" firstAttribute="top" secondItem="As0-vY-chA" secondAttribute="bottom" constant="21" id="Y2j-Na-iCv"/>
+                                    <constraint firstItem="DHh-AK-rna" firstAttribute="leading" secondItem="6cu-Ov-KoQ" secondAttribute="leading" constant="8" id="Zjm-aA-A9p"/>
+                                    <constraint firstItem="NvN-KX-M03" firstAttribute="top" secondItem="56K-ty-y4o" secondAttribute="bottom" constant="38.5" id="chc-1S-KTE"/>
+                                    <constraint firstItem="As0-vY-chA" firstAttribute="leading" secondItem="6cu-Ov-KoQ" secondAttribute="leading" constant="8" id="dNL-du-gXw"/>
+                                    <constraint firstItem="56K-ty-y4o" firstAttribute="leading" secondItem="6cu-Ov-KoQ" secondAttribute="leading" constant="85" id="ofB-Y1-mNv"/>
+                                    <constraint firstItem="NvN-KX-M03" firstAttribute="top" secondItem="DHh-AK-rna" secondAttribute="bottom" constant="168.5" id="qMp-uF-zNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="As0-vY-chA" secondAttribute="trailing" constant="8" id="snF-wA-l8L"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18696656724678432" green="0.18028642480911722" blue="0.80736437182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cu-Ov-KoQ" secondAttribute="trailing" constant="20" id="lNl-TJ-BEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6cu-Ov-KoQ" secondAttribute="bottom" constant="52" id="qJJ-yd-Oye"/>
+                            <constraint firstItem="6cu-Ov-KoQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="xu2-bu-7LV"/>
+                            <constraint firstItem="6cu-Ov-KoQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xyg-et-biv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZP0-z7-IwU" appends="YES" id="Amr-qq-38b"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="inputTF" destination="BTr-NC-JOe" id="ydD-5o-Yzg"/>
+                        <outlet property="outputLbl" destination="NvN-KX-M03" id="uix-KW-F3a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZP0-z7-IwU">
+                    <connections>
+                        <action selector="onTapgestureTap:" destination="BYZ-38-t0r" id="KQE-Hk-tKP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="135" y="92.5"/>
         </scene>
     </scenes>
 </document>

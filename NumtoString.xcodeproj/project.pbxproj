@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B114C68A251EE7A800C1DBEB /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B114C689251EE7A800C1DBEB /* CustomClass.swift */; };
 		B13FBCBF251E5E6A007FB89C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FBCBE251E5E6A007FB89C /* AppDelegate.swift */; };
 		B13FBCC1251E5E6A007FB89C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FBCC0251E5E6A007FB89C /* SceneDelegate.swift */; };
 		B13FBCC3251E5E6A007FB89C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FBCC2251E5E6A007FB89C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B114C689251EE7A800C1DBEB /* CustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
 		B13FBCBB251E5E6A007FB89C /* NumtoString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumtoString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13FBCBE251E5E6A007FB89C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B13FBCC0251E5E6A007FB89C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				B13FBCBE251E5E6A007FB89C /* AppDelegate.swift */,
 				B13FBCC0251E5E6A007FB89C /* SceneDelegate.swift */,
+				B114C689251EE7A800C1DBEB /* CustomClass.swift */,
 				B13FBCC2251E5E6A007FB89C /* ViewController.swift */,
 				B13FBCC4251E5E6A007FB89C /* Main.storyboard */,
 				B13FBCC7251E5E70007FB89C /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B114C68A251EE7A800C1DBEB /* CustomClass.swift in Sources */,
 				B13FBCC3251E5E6A007FB89C /* ViewController.swift in Sources */,
 				B13FBCBF251E5E6A007FB89C /* AppDelegate.swift in Sources */,
 				B13FBCC1251E5E6A007FB89C /* SceneDelegate.swift in Sources */,
