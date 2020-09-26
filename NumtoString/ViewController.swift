@@ -4,13 +4,11 @@
 //
 //  Created by imran shaik on 25/09/20.
 //  Copyright © 2020 imran shaik. All rights reserved.
-//
 
 import UIKit
 class ViewController: UIViewController {
     var one = ["", "one ", "two ", "three ", "four ", "five ", "six ", "seven ", "eight ", "nine ", "ten ", "eleven ", "twelve ", "thirteen ", "fourteen ", "fifteen ", "sixteen ", "seventeen ", "eighteen ", "nineteen "]
     var ten = ["", "", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "]
-
     @IBOutlet weak var inputTF: UITextField!
     @IBOutlet weak var outputLbl: UILabel!
     override func viewDidLoad() {
@@ -91,7 +89,6 @@ class ViewController: UIViewController {
         main()
         }
     }
-    
     @IBAction func onTapgestureTap(_ sender: Any) {
         self.inputTF.resignFirstResponder()
     }
