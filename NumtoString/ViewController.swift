@@ -81,7 +81,9 @@ class ViewController: UIViewController {
         return 0
     }
     @IBAction func onEnterBtnTap(_ sender: Any) {
-        if (inputTF.text?.isEmpty)! || (inputTF.text?.count)! > 16{
+        if (inputTF.text?.isEmpty)!{
+        self.basicAlert(title: "Error", message: "min value is 1 ")
+        }else if (inputTF.text?.count)! > 16{
         self.basicAlert(title: "Error", message: "Enter max 16 digits.The value should not exceed 16 digits.")
         }else{
         numToWords(0, "")
