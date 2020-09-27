@@ -64,10 +64,6 @@ class ViewController: UIViewController {
         return out
     }
     func main() -> Int {
-        // long handles upto 9 digit no
-        // change to unsigned long long int to
-        // handle more digit number
-//        inputTF.text =
         let n = Int(inputTF.text!)
 //        let n1 = 970430058
 //        let n2 = 000
